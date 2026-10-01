@@ -27,11 +27,12 @@ public class Main {
         */
        new File(".git/refs").mkdirs();
 
-       new File(".git/HEAD").createNewFile();
+       new File(".git/HEAD").createNewFile(); 
 
-       new FileWriter(".git/HEAD").append("ref: refs/heads/main\n").close();
+       new FileWriter(".git/HEAD").append("ref: refs/heads/main\n").close(); 
+        // HEAD needs to know which branch we're on, even before any commits exist
 
-       System.out.println("Initialized empty gitty repository in .git/");
+       System.out.println("Initialized empty gitty repository in .git/"); 
 
 
     }
